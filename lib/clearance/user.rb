@@ -186,6 +186,7 @@ module Clearance
     #
     # @return [Boolean] Was the save successful?
     def reset_remember_token!
+      byebug
       generate_remember_token
       save validate: false
     end
